@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주다영 (DaYeong)</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="src/img/heart.png"
+    />
+    <script src="http://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <main id="app">
+      <section class="section-intro">
+        <header id="header">
+          <h1 class="txt-invisible">MY INTRODUCTION</h1>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="#about" class="list-link">About</a></li>
+              <li><a href="#project" class="list-link">Project</a></li>
+              <li><a href="#people" class="list-link">Guest Book</a></li>
+              <li><a href="#contact" class="list-link">Contact</a></li>
+              <!-- <li>
+                <a
+                  href="https://github.com/HyeRrin/portfolio"
+                  class="list-link btn-code"
+                  >code</a
+                >
+              </li> -->
+            </ul>
+          </nav>
+          <div class="bar-bg">
+            <span class="bar-ing"></span>
+          </div>
+        </header>
+
+        <div class="cont-intro">
+          <a name="info"></a>
+          <img src="src/img/profile.PNG" alt="프로필 이미지" />
+          <div>
+            <p class="txt-title"></p>
+            <!-- <a href="#about" class="btn-more">More</a> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="section-about">
+        <a name="about"></a>
+        <h2>About.</h2>
+        <div class="cont-about">
+          <div class="slide-container">
+            <div class="slide-album">
+              <div class="slide-images">
+                <img src="src/img/img-me-1.jpeg" alt="내 사진" />
+                <img src="src/img/img-me-2.jpeg" alt="내 사진" />
+                <img src="src/img/img-me-3.jpeg" alt="내 사진" />
+                <img src="src/img/img-me-4.jpeg" alt="내 사진" />
+                <img src="src/img/img-me-5.jpeg" alt="내 사진" />
+              </div>
+              <button class="btn-next">▶</button>
+              <button class="btn-prev">◀</button>
+            </div>
+          </div>
+          <div class="info-about">
+            <dl class="txt-about">
+              <div>
+                <dt>이름</dt>
+                <dd>주다영</dd>
+              </div>
+              <div>
+                <dt>생년월일</dt>
+                <dd>01.10.19</dd>
+              </div>
+              <div>
+                <dt>거주지</dt>
+                <dd>경기도 양주시</dd>
+              </div>
+              <div>
+                <dt>학교/전공</dt>
+                <dd>광운대학교/정보융합학부</dd>
+              </div>
+            </dl>
+            <div class="btn-about">
+              <button class="btn-open" type="button">
+                <img src="src/img/icon-diary.png" alt="" />취미
+              </button>
+              <button class="btn-open" type="button">
+                <img src="src/img/icon-heart.png" alt="" />성격
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section-project">
+        <a name="project"></a>
+          <h2>Project.</h2>
+          <article class="box-project">
+            <div class="img-box">
+              <img
+                 class="img-project"
+                 src="src/img/img_project_1.1.png"
+                 alt="두번째 프로젝트 이미지"
+               />
+              <img
+                 class="img-project-hover"
+                 src="src/img/img_project_1.2.png"
+                 alt="hover 이미지"
+              /> 
+            </div>
+            <div class="txt-project">
+              <h3>타이머 게임</h3>
+              <dl>
+                <dt>기간</dt>
+                <dd>2024.03</dd>
+                <dt>설명</dt>
+                <dd>난이도 마다 타이머 시간을 맞추는 게임입니다.</dd>
+                <dt>사용 기술</dt>
+                <dd>React</dd><br><br><br><br>
+                <dd style="font-size: 15px; color:#adadad;"> ( 마우스를 갖다대면 다른 이미지도 보실 수 있습니다. )</dd>
+              </dl>
+            </div>
+          </article>
+
+
+          <article class="box-project">
+            <div class="img-box">
+             <img
+                class="img-project"
+                src="src/img/img_project_2.1.png"
+                alt="두 번째 프로젝트 이미지"
+              />
+             <img
+                class="img-project-hover"
+                src="src/img/img_project_2.2.png"
+                alt="hover 이미지"
+             /> 
+            </div>
+            <div class="txt-project">
+              <h3>해야 할 과제</h3>
+              <dl>
+                <dt>기간</dt>
+                <dd>2024.04</dd>
+                <dt>설명</dt>
+                <dd>해야 할 과제들을 기록하고 삭제가 가능한 웹페이지</dd>
+                <dt>사용 기술</dt>
+                <dd>React</dd><br><br><br><br>
+                <dd style="font-size: 15px; color:#adadad;"> ( 마우스를 갖다대면 다른 이미지도 보실 수 있습니다. )</dd>
+              </dl>
+            </div>
+          </article>
+      </section>
+
+
+      <section class="section1-project">
+        <a name="people"></a>
+          <h2>Guest Book.</h2>
+          <p>저에게 하고 싶은 말을 적어주시면 감사하겠습니다😊🤍</p>
+          <article class="box1-project">
+              <div class="container1">
+                  <form id="guestbookForm">
+                      <input type="text" autocomplete="off" id="nameInput" placeholder="작성자" required>
+                      <textarea id="messageInput" placeholder="작성 내용 (enter를 누르세요.)" required></textarea>
+                  </form>
+                  <div id="guestbookEntries"></div>
+              </div>
+          </article>
+      </section>
+
+
+
+      <footer id="footer">
+        <a name="contact"></a>
+        <div class="box-footer">
+          <h2>Contact.</h2>
+          <ul class="link-sns">
+            <li>
+              <a href="mailto:judayeong10@gmail.com"
+                ><img
+                  class="img-gmail"
+                  src="src/img/icon-gmail.png"
+                  alt="구글 메일"
+                />G-mail</a>
+            </li>
+            <li>
+              <a href="https://github.com/Joody20" >
+                <img
+                  class="img-insta"
+                  src="src/img/icon-github.png"
+                  alt="깃허브 주소"
+                />GitHub</a>
+            </li>
+          </ul>
+          <p>© 2024 - DaYeong</p>
+        </div>
+      </footer>
+
+
+      <div class="modal-background">
+        <div class="modal">
+          <h3>취미</h3>
+          <h4>여행 다니기</h4>
+          <img src="src/img/trip.jpeg" alt="여행 이미지" />
+          <p>
+            취미는 여행 다니기에요!🛫🏝️ 여행을 다니며 여러 문화를 느끼고, 여러 풍경들을 보며,새로운 마음가짐을 하게 되고, 저 자신에 대해 집중할 수 있는 시간을 만들 수 있어서 저의 삶에 가장 필요한 취미입니다!🩷
+          </p>
+          <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <div class="modal-background">
+        <div class="modal">
+          <h3>성격</h3>
+          <h4>밝고 계획적이에요!</h4>
+          <img src="src/img/img_plan.JPEG" alt="계획 이미지" />
+          <p>
+            저는 매사에 긍정적으로 생각하며 아주 밝은 사람이에요. 그리고, 계획 세우는 걸 좋아해요. 그 계획에 따라 실천하는 것을
+            굉장히 중요하게 생각하는 사람이랍니다!📝 참고로 저의 MBTI는 "ISTJ"입니다 !
+          </p>
+          <button type="button" class="btn-close">Close</button>
+        </div>
+      </div>
+      <button onclick="moveToTop()" class="btn-moveTop"></button>
+      <script src="js/index.js"></script>
+    </main>
+  </body>
+</html>
