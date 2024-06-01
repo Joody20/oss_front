@@ -128,7 +128,7 @@ function renderUsers(users){
       entry.innerHTML = `
           <strong class="name" style="margin-bottom: 5px; font-weight: bold; font-size:12px; line-height: 2px;"> ${user.name}</strong>
           <span class="created-at" style="display: block; float:right; font-size:11px;"> (${timestamp})</span><br>
-          <span class="message" style=" display: inline-block; margin-top:7px;"> ${user.content} </span>
+          <span class="message" style=" display: inline-block; margin-top:7px; font-size: 13px;"> ${user.content} </span>
           <button class="delete-button">삭제</button>
       `;
       guestbookEntries.appendChild(entry);
