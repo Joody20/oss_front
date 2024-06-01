@@ -418,21 +418,8 @@ textarea {
   font-size: 15px;
 }
 
-/* .guestbook-entry strong {
-  font-weight: bold;
-} */
-
-/* .guestbook-entry strong.name{
-  font-weight : bold;
-  line-height : 1px;
-  font-size: 12px;
-}  */
-/* .guestbook-entry strong.time{
-  font-size: 13px;
-  float : right;
-}  */
-
 .guestbook-entry button.delete-button {
+  display: none;
   float: right;
   background-color: #FFB5A7;
   color: #fff;
@@ -443,10 +430,8 @@ textarea {
   margin-top: 3px;
 }
 
-.guestbook-entry button.delete-button:hover {
-  background-color: #fff;
-  color : #FFB5A7;
-  border : 1px solid #FFB5A7;
+.guestbook-entry:hover button.delete-button {
+  display: block;
 }
 
 
