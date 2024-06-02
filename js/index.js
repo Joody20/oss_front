@@ -1,5 +1,5 @@
 // const host = "http://127.0.0.1:8002"; // 내 백엔드 서버 연 포트 번호 : 8002
-const host = "http://44.223.119.42:8080"; // docker 백엔드 서버 포트 번호 : 8080
+const host = "http://44.223.119.42:8000"; // docker 백엔드 서버 포트 번호 : 8080
 
 
 
@@ -121,13 +121,21 @@ function renderUsers(users){
       entry.classList.add('guestbook-entry');
 
       // console.log(user.created_at);
-      const options = { timeZone: 'Asia/Seoul' };
-      const timestamp = new Date(user.created_at).toLocaleString('ko-KR', options);
+      // // const options = { timeZone: 'Asia/Seoul' };
+      // const timestamp = new Date(user.created_at).toLocaleString('ko-KR',{timeZone:'Asia/Seoul'});
       // console.log(timestamp);
+
+       // Log the raw `created_at` value
+      // console.log("Raw created_at:", user.created_at);
+
+      const seoulDate = moment.utc(user.created_at).tz('Asia/Seoul').format('YYYY. M. D. A h:mm:ss');
+      // Log the formatted timestamp
+      // console.log("Formatted Timestamp:", seoulDate);
+
 
       entry.innerHTML = `
           <strong class="name" style="margin-bottom: 5px; font-weight: bold; font-size:12px; line-height: 2px;"> ${user.name}</strong>
-          <span class="created-at" style="display: block; float:right; font-size:11px;"> (${timestamp})</span><br>
+          <span class="created-at" style="display: block; float:right; font-size:11px;"> (${seoulDate})</span><br>
           <span class="message" style=" display: inline-block; margin-top:7px; font-size: 13px;"> ${user.content} </span>
           <button class="delete-button">삭제</button>
       `;
